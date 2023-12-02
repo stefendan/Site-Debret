@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+p{
+    padding-top: 10px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/*link para outras páginas*/
+#links{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    max-width: 900px; 
+    max-height: 900px; 
+    min-height: 800px;
+    min-width: 800px;
+}
+
+#quadro{
+    margin-left: 30%;
+    margin-top: 4%;
+
+}
+#jornal{
+    margin-top: 15%;
+   
+}
+
+/*Livro do Debret*/
+#livro{
+    display: flex;
+    height: 55vh;
+    width: 85vw;
+    min-height: 800px;
+    min-width: 920px;
+    max-height: 600px;
+    max-width: 700px;
+    align-items: start;
+    justify-content: space-around;    
+    background: url(../Imagens/livro.png);
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+article {
+
+    display: flex;
+    flex-direction: column;
+    
+    padding-top: 80px;
+
+    width: 38%; 
+    width: 280px; 
+    height: 300px;
+}

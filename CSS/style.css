@@ -1,0 +1,22 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #594F42;
+}
+
+body{
+    background: url(../Imagens/backGround.jpg), lightgray 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+}
+#quadro{
+    rotate: -25deg;
+}
+
+
+

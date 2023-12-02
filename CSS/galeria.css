@@ -1,0 +1,232 @@
+/*    Vinicius Justino Cardoso    GU3038416    Turma A    */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    color:#594F42
+}
+
+header {
+    height: 10vh;
+    padding: 1vh 1vw;
+    background-color: #B0D9CD;
+    color: #A68160;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    justify-self: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+header a figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header a figure img {
+    height: 5vh;
+}
+
+footer {
+    height: 10vh;
+    background-color: #B0D9CD;
+    color: #A68160;
+}
+
+footer a {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.fundo {
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+    filter: blur(7px);
+    opacity: 50%;
+}
+
+.conteudo {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.descricao-obra {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.moldura {
+    border: 1vh outset #FB846A;
+    width: fit-content;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.moldura div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.borda-horizontal {
+    width: 100%;
+    height: 5vh;
+    background-color: #D96248;
+}
+
+.borda-vertical {
+    width: 5vh;
+    height: inherit;
+    background-color: #D96248;
+
+    flex-direction: column;
+}
+
+.decoracao-borda {
+    align-items: center;
+}
+
+.traco {
+    height: 5px;
+    width: 20px;
+    border: 1px solid #D5C562;
+    border-radius: 25%;
+
+    background-color: #D5C562;
+}
+
+.ponto {
+    height: 0;
+    margin: 0 5px;
+    border: 5px solid #B8A9D9;
+    border-radius: 50%;
+}
+
+.borda-vertical .decoracao-borda {
+    rotate: 90deg;
+}
+
+.quadro {
+    height: 35vh;
+    border: 1vh inset #FB846A;
+}
+
+.caixa-comentario {
+    max-width: 50%;
+    text-align: justify;
+}
+
+@media all and (max-width: 850px) {
+    .obra {
+        width: fit-content;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descricao-obra {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .moldura {
+        border-width: 0.5vh;
+    }
+    
+    .borda-horizontal {
+        height: 3vw;
+    }
+    
+    .borda-vertical {
+        width: 3vw;
+    }
+
+    .borda-vertical .decoracao-borda {
+        display: none;
+    }
+
+    .quadro {
+        height: 25vh;
+        border-width: 0.5vh;
+    }
+
+    .caixa-comentario {
+        max-width: 75%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    h1 {
+        font-size: 1em;
+    }
+
+    h2, p {
+        font-size: 0.7em;
+    }
+
+    figcaption {
+        font-size: 0.5em;
+    }
+
+    .borda-horizontal {
+        height: 2vw;
+    }
+    
+    .borda-vertical {
+        width: 2vw;
+    }
+
+    .borda-horizontal .decoracao-borda {
+        display: none;
+    }
+
+    .quadro {
+        height: 20vh;
+    }
+
+    .caixa-comentario {
+        max-width: 95%;
+    }
+}
